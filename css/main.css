@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700|Open+Sans:400,600|Open+Sans+Condensed:300);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -47,46 +48,67 @@ table {
   border-spacing: 0; }
 
 .page-wrapper {
-  padding: 0 10em; }
+  padding: 0 10em 10em 10em; }
 
 #head-wrapper {
   background: url(../img/background-image.jpg) no-repeat 80% 70%;
   background-size: cover;
-  height: 300px;
+  height: 350px;
   position: relative;
   overflow: hidden; }
   #head-wrapper .header-intro {
-    border: 1px solid pink;
     position: absolute;
-    height: 60px;
+    height: 70px;
     top: 80%;
     left: 10em;
-    max-width: 300px;
-    background-color: white; }
+    width: 400px;
+    background-color: #724AEE; }
     #head-wrapper .header-intro h1 {
-      font-size: 3em; }
+      padding: 15px 10px 10px 10px;
+      text-align: center;
+      font-family: 'Droid Serif', serif;
+      font-weight: 700;
+      font-size: 2.25em;
+      color: white; }
 
 #about {
   padding: 5em 10em 5em 0; }
-  #about .about-wrapper h2 {
+  #about h2 {
+    font-family: 'Open Sans', sans-serif;
     font-size: 2em; }
-  #about .about-wrapper p {
-    margin-top: 10px;
-    line-height: 1.5em; }
+  #about .about-wrapper {
+    margin-top: 35px; }
+    #about .about-wrapper p {
+      font-family: 'Open Sans Condensed', sans-serif;
+      font-weight: 600;
+      font-size: 1.15em;
+      letter-spacing: 0.05em;
+      margin-top: 15px;
+      line-height: 1.5em; }
+
+#portfolio h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2em; }
 
 #portfolio .portfolio-wrapper {
+  margin-top: 45px;
   display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
   -webkit-box-pack: start;
           justify-content: flex-start; }
+  #portfolio .portfolio-wrapper .project-description h3 {
+    font-family: 'Open Sans', sans-serif; }
   #portfolio .portfolio-wrapper .project-description h4 {
+    font-family: 'Open Sans', sans-serif;
     margin-top: 5px; }
   #portfolio .portfolio-wrapper .project-description p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.15em;
     margin-top: 10px;
     line-height: 1.5em; }
   #portfolio .portfolio-wrapper .grid {
-    margin-bottom: 25px;
+    margin-bottom: 50px;
     width: 49%; }
   #portfolio .portfolio-wrapper ul {
     margin-top: 10px;
@@ -94,3 +116,12 @@ table {
     display: flex; }
     #portfolio .portfolio-wrapper ul li {
       padding-right: 5px; }
+
+#contact h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2em; }
+
+#contact .contact-wrapper {
+  margin-top: 10px; }
+  #contact .contact-wrapper p {
+    padding-bottom: 5px; }
