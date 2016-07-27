@@ -1,0 +1,22 @@
+#head-wrapper {
+  background: url(../img/background-image.jpg) no-repeat 80% 70%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  .header-intro {
+    border: 1px solid pink;
+    position: absolute;
+    height: 60px;
+    top: 80%;
+    left: 10em;
+    max-width: 300px;
+    background-color: white;
+    h1 {
+      font-size: 3em;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+#portfolio {
+  .portfolio-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    .project-description {
+      h4 {
+        margin-top: 5px;
+      }
+      p {
+        margin-top: 10px;
+        line-height: 1.5em;
+      }
+    }
+    .grid {
+      margin-bottom: 25px;
+      width: 49%;
+    }
+    ul {
+      margin-top: 10px;
+      display: flex;
+      li {
+        padding-right: 5px;
+      }
+    }
+  }
+}
