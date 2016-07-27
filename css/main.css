@@ -45,3 +45,52 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+.page-wrapper {
+  padding: 0 10em; }
+
+#head-wrapper {
+  background: url(../img/background-image.jpg) no-repeat 80% 70%;
+  background-size: cover;
+  height: 300px;
+  position: relative;
+  overflow: hidden; }
+  #head-wrapper .header-intro {
+    border: 1px solid pink;
+    position: absolute;
+    height: 60px;
+    top: 80%;
+    left: 10em;
+    max-width: 300px;
+    background-color: white; }
+    #head-wrapper .header-intro h1 {
+      font-size: 3em; }
+
+#about {
+  padding: 5em 10em 5em 0; }
+  #about .about-wrapper h2 {
+    font-size: 2em; }
+  #about .about-wrapper p {
+    margin-top: 10px;
+    line-height: 1.5em; }
+
+#portfolio .portfolio-wrapper {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+          justify-content: flex-start; }
+  #portfolio .portfolio-wrapper .project-description h4 {
+    margin-top: 5px; }
+  #portfolio .portfolio-wrapper .project-description p {
+    margin-top: 10px;
+    line-height: 1.5em; }
+  #portfolio .portfolio-wrapper .grid {
+    margin-bottom: 25px;
+    width: 49%; }
+  #portfolio .portfolio-wrapper ul {
+    margin-top: 10px;
+    display: -webkit-box;
+    display: flex; }
+    #portfolio .portfolio-wrapper ul li {
+      padding-right: 5px; }
