@@ -1,19 +1,30 @@
 #portfolio {
+  h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+  }
   .portfolio-wrapper {
+    margin-top: 45px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     .project-description {
+      h3 {
+        font-family: 'Open Sans', sans-serif;
+      }
       h4 {
+        font-family: 'Open Sans', sans-serif;
         margin-top: 5px;
       }
       p {
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 1.15em;
         margin-top: 10px;
         line-height: 1.5em;
       }
     }
     .grid {
-      margin-bottom: 25px;
+      margin-bottom: 50px;
       width: 49%;
     }
     ul {
