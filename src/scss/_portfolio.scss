@@ -7,7 +7,15 @@
     margin-top: 45px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    flex-flow: row wrap;
+    justify-content: space-between;;
+    .project-img-wrapper {
+      // overflow: hidden;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
     .project-description {
       h3 {
         font-family: 'Open Sans', sans-serif;
@@ -22,10 +30,29 @@
         margin-top: 10px;
         line-height: 1.5em;
       }
+      ul {
+        text-align: center;
+        li {
+          font-family: 'Open Sans', sans-serif;
+          color: blue;
+          a {
+            text-decoration: none;
+          }
+      }
+
+      }
+
     }
     .grid {
+      box-sizing: border-box;
       margin-bottom: 50px;
-      width: 49%;
+      width: 100%;
+      @media screen and (min-width: 768px){
+        width: 40%;
+      }
+      // @media screen and (min-width: 768px){
+      //   width: 33.3333333%;
+      // }
     }
     ul {
       margin-top: 10px;

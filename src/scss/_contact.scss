@@ -6,7 +6,12 @@
   .contact-wrapper {
     margin-top: 10px;
     p {
+      font-family: 'Open Sans', sans-serif;
       padding-bottom: 5px;
+      line-height: 1.5;
+    }
+    a {
+      text-decoration: none;
     }
   }
 }

@@ -48,7 +48,14 @@ table {
   border-spacing: 0; }
 
 .page-wrapper {
-  padding: 0 10em 10em 10em; }
+  text-align: center;
+  margin: 0 auto; }
+  @media screen and (min-width: 425px) {
+    .page-wrapper {
+      margin: 0 5em 5em 10em; } }
+  @media screen and (min-width: 1024px) {
+    .page-wrapper {
+      margin: 0 10em 10em 10em; } }
 
 #head-wrapper {
   background: url(../img/background-image.jpg) no-repeat 80% 70%;
@@ -60,11 +67,11 @@ table {
     position: absolute;
     height: 70px;
     top: 80%;
-    left: 10em;
+    left: 135px;
     width: 400px;
     background-color: #724AEE; }
     #head-wrapper .header-intro h1 {
-      padding: 15px 10px 10px 10px;
+      padding: 20px 10px 10px 10px;
       text-align: center;
       font-family: 'Droid Serif', serif;
       font-weight: 700;
@@ -95,8 +102,12 @@ table {
   display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
-  -webkit-box-pack: start;
-          justify-content: flex-start; }
+  flex-flow: row wrap;
+  -webkit-box-pack: justify;
+          justify-content: space-between; }
+  #portfolio .portfolio-wrapper .project-img-wrapper img {
+    height: 100%;
+    width: 100%; }
   #portfolio .portfolio-wrapper .project-description h3 {
     font-family: 'Open Sans', sans-serif; }
   #portfolio .portfolio-wrapper .project-description h4 {
@@ -107,9 +118,20 @@ table {
     font-size: 1.15em;
     margin-top: 10px;
     line-height: 1.5em; }
+  #portfolio .portfolio-wrapper .project-description ul {
+    text-align: center; }
+    #portfolio .portfolio-wrapper .project-description ul li {
+      font-family: 'Open Sans', sans-serif;
+      color: blue; }
+      #portfolio .portfolio-wrapper .project-description ul li a {
+        text-decoration: none; }
   #portfolio .portfolio-wrapper .grid {
+    box-sizing: border-box;
     margin-bottom: 50px;
-    width: 49%; }
+    width: 100%; }
+    @media screen and (min-width: 768px) {
+      #portfolio .portfolio-wrapper .grid {
+        width: 40%; } }
   #portfolio .portfolio-wrapper ul {
     margin-top: 10px;
     display: -webkit-box;
@@ -124,4 +146,8 @@ table {
 #contact .contact-wrapper {
   margin-top: 10px; }
   #contact .contact-wrapper p {
-    padding-bottom: 5px; }
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 5px;
+    line-height: 1.5; }
+  #contact .contact-wrapper a {
+    text-decoration: none; }
