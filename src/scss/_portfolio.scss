@@ -4,56 +4,6 @@
     font-size: 2em;
   }
   .portfolio-wrapper {
-    margin-top: 45px;
-    // display: flex;
-    // flex-wrap: wrap;
-    // flex-flow: row wrap;
-    // justify-content: space-between;
-    .project-img-wrapper {
-      // overflow: hidden;
-      width: auto;
-      // 
-      img {
-        width: auto;
-        // height: 100%;
-        // width: 100%;
-      }
-    }
-    .project-description {
-      // float: right;
-      width: auto;
-      h3 {
-        font-family: 'Open Sans', sans-serif;
-      }
-      h4 {
-        font-family: 'Open Sans', sans-serif;
-        margin-top: 5px;
-      }
-      p {
-        font-family: 'Open Sans Condensed', sans-serif;
-        font-size: 1.15em;
-        margin-top: 10px;
-        line-height: 1.5em;
-      }
-      ul {
-        text-align: center;
-        li {
-          font-family: 'Open Sans', sans-serif;
-          color: blue;
-          a {
-            text-decoration: none;
-          }
-      }
-
-      }
-
-    }
-    ul {
-      margin-top: 10px;
-      display: flex;
-      li {
-        padding-right: 5px;
-      }
-    }
+    margin-top: 20px;
   }
 }
