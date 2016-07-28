@@ -5,18 +5,23 @@
   }
   .portfolio-wrapper {
     margin-top: 45px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-flow: row wrap;
-    justify-content: space-between;;
+    // display: flex;
+    // flex-wrap: wrap;
+    // flex-flow: row wrap;
+    // justify-content: space-between;
     .project-img-wrapper {
       // overflow: hidden;
+      width: auto;
+      // 
       img {
-        height: 100%;
-        width: 100%;
+        width: auto;
+        // height: 100%;
+        // width: 100%;
       }
     }
     .project-description {
+      // float: right;
+      width: auto;
       h3 {
         font-family: 'Open Sans', sans-serif;
       }
@@ -42,17 +47,6 @@
 
       }
 
-    }
-    .grid {
-      box-sizing: border-box;
-      margin-bottom: 50px;
-      width: 100%;
-      @media screen and (min-width: 768px){
-        width: 40%;
-      }
-      // @media screen and (min-width: 768px){
-      //   width: 33.3333333%;
-      // }
     }
     ul {
       margin-top: 10px;
