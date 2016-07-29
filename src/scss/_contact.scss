@@ -9,14 +9,22 @@
     }
   }
   .contact-wrapper {
-    margin-top: 10px;
+    margin-top: 25px;
     p {
       font-family: 'Open Sans', sans-serif;
       padding-bottom: 5px;
       line-height: 1.5;
-    }
-    a {
-      text-decoration: none;
+      a {
+        text-decoration: none;
+        color: $bright-blue;
+        transition: color 0.3s ease;
+        &:visited {
+          color: $bright-blue;
+        }
+        &:hover {
+          color: $hover;
+        }
+      }
     }
   }
 }

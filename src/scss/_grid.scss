@@ -22,7 +22,7 @@
   .project-img-wrapper {
     width: 100%;
     img {
-      border: 1px solid black;
+      border: 2px solid $img-border;
       width: auto;
     }
   }
@@ -40,7 +40,7 @@
     // float: right;
     height: auto;
     width: auto;
-    padding-top: 15px;
+    padding-top: 20px;
     @media screen and (min-width: 425px) {
       padding-top: 0;
     }
@@ -65,9 +65,17 @@
       text-align: center;
       li {
         font-family: 'Open Sans', sans-serif;
-        color: blue;
+        color: $bright-blue;
         a {
           text-decoration: none;
+          color: $bright-blue;
+          transition: color 0.3s ease;
+          &:visited {
+            color: $bright-blue;
+          }
+          &:hover {
+            color: $hover;
+          }
         }
       }
     }
