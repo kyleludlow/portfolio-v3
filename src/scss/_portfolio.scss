@@ -2,6 +2,10 @@
   h2 {
     font-family: 'Open Sans', sans-serif;
     font-size: 2em;
+    text-align: center;
+    @media screen and (min-width: 425px) {
+      text-align: left;
+    }
   }
   .portfolio-wrapper {
     margin-top: 20px;

@@ -22,6 +22,7 @@
   .project-img-wrapper {
     width: 100%;
     img {
+      border: 1px solid black;
       width: auto;
     }
   }
@@ -39,6 +40,10 @@
     // float: right;
     height: auto;
     width: auto;
+    padding-top: 15px;
+    @media screen and (min-width: 425px) {
+      padding-top: 0;
+    }
     h3 {
       font-family: 'Open Sans', sans-serif;
     }
@@ -47,11 +52,14 @@
       margin-top: 5px;
     }
     p {
-      max-width: 275px;
+      // max-width: 275px;
       font-family: 'Open Sans Condensed', sans-serif;
       font-size: 1.15em;
       margin-top: 10px;
       line-height: 1.5em;
+      @media screen and (min-width: 768px) {
+        max-width: 275px;
+      }
     }
     ul {
       text-align: center;
