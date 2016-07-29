@@ -48,12 +48,12 @@ table {
   border-spacing: 0; }
 
 .page-wrapper {
-  text-align: center;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin: 1em; }
   @media screen and (min-width: 425px) {
     .page-wrapper {
       text-align: left;
-      margin: 0 1em 1em 2em; } }
+      margin: 1em 1em 1em 2em; } }
   @media screen and (min-width: 768px) {
     .page-wrapper {
       text-align: left;
@@ -70,29 +70,70 @@ table {
 #head-wrapper {
   background: url(../img/background-image.jpg) no-repeat 80% 70%;
   background-size: cover;
-  height: 350px;
+  height: 225px;
   position: relative;
   overflow: hidden; }
+  @media screen and (min-width: 425px) {
+    #head-wrapper {
+      height: 225px; } }
+  @media screen and (min-width: 768px) {
+    #head-wrapper {
+      height: 250px; } }
+  @media screen and (min-width: 1024px) {
+    #head-wrapper {
+      height: 350px; } }
   #head-wrapper .header-intro {
     position: absolute;
     height: 70px;
-    top: 80%;
-    left: 135px;
-    width: 400px;
-    background-color: #724AEE; }
+    top: 70%;
+    left: 0px;
+    width: 375px;
+    background-color: #5677FC; }
+    @media screen and (min-width: 425px) {
+      #head-wrapper .header-intro {
+        width: 400px;
+        left: 0px;
+        top: 75%; } }
+    @media screen and (min-width: 768px) {
+      #head-wrapper .header-intro {
+        left: 10px;
+        top: 75%; } }
+    @media screen and (min-width: 1024px) {
+      #head-wrapper .header-intro {
+        left: 95px;
+        top: 80%; } }
+    @media screen and (min-width: 1440px) {
+      #head-wrapper .header-intro {
+        left: 135px; } }
     #head-wrapper .header-intro h1 {
-      padding: 20px 10px 10px 10px;
+      padding: 15px 5px 5px 5px;
       text-align: center;
       font-family: 'Droid Serif', serif;
       font-weight: 700;
       font-size: 2.25em;
       color: white; }
+      @media screen and (min-width: 768px) {
+        #head-wrapper .header-intro h1 {
+          padding: 10px 10px 10px 10px; } }
+      @media screen and (min-width: 768px) {
+        #head-wrapper .header-intro h1 {
+          padding: 15px 10px 10px 10px; } }
+      @media screen and (min-width: 1024px) {
+        #head-wrapper .header-intro h1 {
+          padding: 20px 10px 10px 10px; } }
 
 #about {
-  padding: 5em 0 5em 0; }
+  padding: 2em 0 2em 0; }
+  @media screen and (min-width: 425px) {
+    #about {
+      padding: 5em 0 5em 0; } }
   #about h2 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 2em; }
+    font-size: 2em;
+    text-align: center; }
+    @media screen and (min-width: 425px) {
+      #about h2 {
+        text-align: left; } }
   #about .about-wrapper {
     margin-top: 35px; }
     #about .about-wrapper p {
@@ -105,7 +146,11 @@ table {
 
 #portfolio h2 {
   font-family: 'Open Sans', sans-serif;
-  font-size: 2em; }
+  font-size: 2em;
+  text-align: center; }
+  @media screen and (min-width: 425px) {
+    #portfolio h2 {
+      text-align: left; } }
 
 #portfolio .portfolio-wrapper {
   margin-top: 20px; }
@@ -131,6 +176,7 @@ table {
   .col-1-3 .project-img-wrapper {
     width: 100%; }
     .col-1-3 .project-img-wrapper img {
+      border: 1px solid black;
       width: auto; }
 
 .col-2-3 {
@@ -144,18 +190,24 @@ table {
       padding-left: 50px; } }
   .col-2-3 .project-description {
     height: auto;
-    width: auto; }
+    width: auto;
+    padding-top: 15px; }
+    @media screen and (min-width: 425px) {
+      .col-2-3 .project-description {
+        padding-top: 0; } }
     .col-2-3 .project-description h3 {
       font-family: 'Open Sans', sans-serif; }
     .col-2-3 .project-description h4 {
       font-family: 'Open Sans', sans-serif;
       margin-top: 5px; }
     .col-2-3 .project-description p {
-      max-width: 275px;
       font-family: 'Open Sans Condensed', sans-serif;
       font-size: 1.15em;
       margin-top: 10px;
       line-height: 1.5em; }
+      @media screen and (min-width: 768px) {
+        .col-2-3 .project-description p {
+          max-width: 275px; } }
     .col-2-3 .project-description ul {
       text-align: center; }
       .col-2-3 .project-description ul li {
@@ -178,15 +230,20 @@ table {
 .grid-pad {
   padding: 20px 0; }
 
-#contact h2 {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 2em; }
-
-#contact .contact-wrapper {
-  margin-top: 10px; }
-  #contact .contact-wrapper p {
+#contact {
+  margin-top: 2em; }
+  #contact h2 {
     font-family: 'Open Sans', sans-serif;
-    padding-bottom: 5px;
-    line-height: 1.5; }
-  #contact .contact-wrapper a {
-    text-decoration: none; }
+    font-size: 2em;
+    text-align: center; }
+    @media screen and (min-width: 425px) {
+      #contact h2 {
+        text-align: left; } }
+  #contact .contact-wrapper {
+    margin-top: 10px; }
+    #contact .contact-wrapper p {
+      font-family: 'Open Sans', sans-serif;
+      padding-bottom: 5px;
+      line-height: 1.5; }
+    #contact .contact-wrapper a {
+      text-decoration: none; }
