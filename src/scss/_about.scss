@@ -1,14 +1,8 @@
 #about {
-  padding: 2em 0 2em 0;
+  padding: 2em 0;
   @media screen and (min-width: 425px) {
-    padding: 5em 0 5em 0;
+    padding: 5em 0;
   }
-  // @media screen and (min-width: 768px) {
-  //   height: 250px;
-  // }
-  // @media screen and (min-width: 1024px) {
-  //   height: 350px;
-  // }
   h2 {
     font-family: 'Open Sans', sans-serif;
     font-size: 2em;
@@ -25,6 +19,13 @@
       letter-spacing: -0.02em;
       margin-top: 15px;
       line-height: 1.5em;
+      max-width: 310px;
+      @media screen and (min-width: 375px) {
+        max-width: 350px;
+      }
+      @media screen and (min-width: 424px) {
+        max-width: none;
+      }
     }
   }
 }
