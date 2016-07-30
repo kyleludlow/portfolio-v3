@@ -8,13 +8,19 @@
   position: relative;
   overflow: hidden;
   @media screen and (min-width: 426px) {
-    background: url("../img/background-image.jpg") no-repeat 80% 70%;
+    background: url("../img/background-image-t.jpeg") no-repeat 80% 70%;
   }
   @media screen and (min-width: 768px) {
     height: 250px;
   }
   @media screen and (min-width: 1024px) {
+    background: url("../img/background-image-d.jpeg") no-repeat 80% 70%;
     height: 350px;
+  }
+  @media
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+    background: url("../img/background-image-r.jpeg") no-repeat 80% 70%;
   }
   .header-intro {
     position: absolute;
