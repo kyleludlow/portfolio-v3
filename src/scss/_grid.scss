@@ -50,15 +50,17 @@
       font-family: 'Open Sans', sans-serif;
     }
     h4 {
-      font-family: 'Open Sans', sans-serif;
       margin-top: 5px;
+      padding-bottom: 5px;
+      font-family: 'Open Sans', sans-serif;
       color: $accent;
     }
     p {
-      font-family: 'Open Sans', sans-serif;
       margin-top: 10px;
+      font-family: 'Open Sans', sans-serif;
       letter-spacing: -0.02em;
       line-height: 1.5em;
+      color: $description;
       @media screen and (min-width: 768px) {
         max-width: 275px;
       }
